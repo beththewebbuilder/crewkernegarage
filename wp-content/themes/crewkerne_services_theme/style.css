@@ -1,0 +1,306 @@
+/*
+Theme Name: Crewkerne Garage
+Author: Bethany Fowler
+Description: Template for Crewkerne Garage
+Version: 0.0.1
+Tags: bootstrap
+*/
+/*
+Theme Name: Crewkerne Garage
+Author: Bethany Fowler
+Description: Template for Crewkerne Garage
+Version: 0.0.1
+Tags: bootstrap
+*/
+body {
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (max-width: 769px) {
+  body {
+    margin-bottom: 55px;
+  }
+}
+
+.header-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+.header-section.left-section {
+  justify-content: flex-end;
+  text-align: right;
+}
+.header-section.right-section {
+  justify-content: flex-start;
+}
+@media screen and (max-width: 769px) {
+  .header-section {
+    display: none;
+  }
+}
+.header-section ul {
+  list-style-type: none;
+}
+.header-section ul li a {
+  color: #212529;
+}
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+    left: 0px;
+  }
+}
+.navbar #navbarNav {
+  justify-content: center;
+}
+@media screen and (max-width: 769px) {
+  .navbar #navbarNav ul {
+    display: inline;
+  }
+}
+.navbar #navbarNav ul li {
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.navbar #navbarNav ul li.mob-nav {
+  display: none;
+}
+.navbar #navbarNav ul li.lrg-nav {
+  display: inline-block;
+}
+@media screen and (max-width: 769px) {
+  .navbar #navbarNav ul li {
+    display: inline-block;
+    width: 32%;
+    margin: 0px;
+    text-align: center;
+  }
+  .navbar #navbarNav ul li.mob-nav {
+    display: inline-block;
+  }
+  .navbar #navbarNav ul li.lrg-nav {
+    display: none;
+  }
+}
+.navbar #navbarNav ul li a {
+  color: black;
+  font-size: 18px;
+}
+.navbar #navbarNav ul li a .nav-icon {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  .navbar #navbarNav ul li a {
+    font-size: 12px;
+  }
+  .navbar #navbarNav ul li a .nav-icon {
+    display: block;
+    font-size: 16px;
+    margin: auto;
+  }
+}
+.navbar #navbarNav ul li.current-menu-parent a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar #navbarNav ul li.current-menu-parent ul li a {
+  font-weight: normal;
+  text-decoration: none;
+}
+.navbar #navbarNav ul li.current-menu-parent ul li.current-menu-item a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar #navbarNav ul li.current-menu-item a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar #navbarNav ul li ul {
+  padding: 10px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.navbar #navbarNav ul li ul li {
+  list-style-type: none;
+}
+.navbar #navbarNav ul li:hover ul {
+  display: block;
+}
+
+.header-border {
+  border: 1px solid #FFE200;
+}
+
+.bosch_banner {
+  border: 4px solid #808080;
+  padding: 10px;
+  display: flex;
+}
+.bosch_banner .bosch_logo, .bosch_banner .bosch_text {
+  display: inline-block;
+  text-align: center;
+}
+.bosch_banner .bosch_logo img, .bosch_banner .bosch_text img {
+  height: 60px;
+  padding-right: 20px;
+}
+
+.service-page-content {
+  padding-top: 30px;
+}
+.service-page-content table tr td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.service-page-content .contact_banner {
+  text-align: center;
+  padding: 20px;
+  background-color: #ccc;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.service-page-content .contact_banner .contact_number_link {
+  display: block;
+  font-weight: bold;
+  color: #404040;
+}
+
+.service-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.service-btn a {
+  color: #404040;
+  width: 100%;
+}
+
+/* Contact Page */
+.contact_details {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 769px) {
+  .contact_details {
+    border-right: 1px solid #cccc;
+  }
+}
+.contact_details .contact-content {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.contact_details .contact-content.break-anywhere {
+  line-break: anywhere;
+}
+.contact_details .contact-content a {
+  color: #404040;
+}
+.contact_details .contact_icon {
+  background-color: #FFE200;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 6px;
+}
+
+.contact_form {
+  padding: 20px;
+}
+.contact_form label {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+.contact_form .contact-spm-field {
+  display: none;
+}
+
+.form-control-msg {
+  display: none;
+}
+
+.has-error .form-control-msg, .js-show-feedback {
+  display: block;
+}
+
+footer {
+  background-color: #808080;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+}
+footer .footer-right {
+  text-align: right;
+}
+footer a {
+  color: white;
+}
+@media screen and (max-width: 769px) {
+  footer {
+    text-align: center;
+  }
+  footer .footer-right {
+    text-align: center;
+  }
+}
+
+.info-banner {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homepage-content {
+  background-image: url("images/pexels-garage-background.jpg");
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 20px;
+}
+.homepage-content .overlay-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bosch-logo {
+  text-align: center;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bosch-logo img {
+  height: 100%;
+}
+
+.content-border {
+  border: 2px solid #FFE200;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 360px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

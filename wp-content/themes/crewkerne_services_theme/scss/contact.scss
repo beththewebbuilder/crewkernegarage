@@ -1,0 +1,62 @@
+/* Contact Page */
+@import 'variables.scss';
+
+.contact_details {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $sml-screen) {
+    border-right: 1px solid #cccc;
+  }
+
+  .contact-content {
+    font-family: $main-font;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+    &.break-anywhere {
+      line-break: anywhere;
+    }
+
+    a {
+      color: #404040;
+    }
+
+  }
+
+  .contact_icon {
+    background-color: $primary-colour;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+}
+
+
+.contact_form {
+  padding: 20px;
+
+  label {
+    font-family: $main-font;
+    font-weight: normal;
+  }
+
+  .contact-spm-field {
+    display: none;
+  }
+}
+
+
+.form-control-msg {
+  display: none;
+}
+.has-error .form-control-msg, .js-show-feedback {
+  display: block;
+}

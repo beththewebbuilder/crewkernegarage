@@ -1,0 +1,204 @@
+/*
+Theme Name: Crewkerne Garage
+Author: Bethany Fowler
+Description: Template for Crewkerne Garage
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+@import 'variables.scss';
+
+body {
+  font-family: $main-font;
+  @media screen and (max-width: $sml-screen) {
+    margin-bottom: 55px;
+  }
+}
+
+.header-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: $main-font;
+
+  &.left-section {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  &.right-section {
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: $sml-screen) {
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      a {
+        color: #212529;
+      }
+    }
+  }
+}
+
+.navbar {
+  @media screen and (max-width: $sml-screen) {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+    left: 0px;
+  }
+
+  #navbarNav {
+    justify-content: center;
+
+    ul {
+      @media screen and (max-width: $sml-screen) {
+        display: inline;
+      }
+      li {
+        &.mob-nav {
+          display: none;
+        }
+        &.lrg-nav {
+          display: inline-block;
+        }
+        @media screen and (max-width: $sml-screen) {
+          display: inline-block;
+          width: 32%;
+          margin: 0px;
+          text-align: center;
+          &.mob-nav {
+            display: inline-block;
+          }
+          &.lrg-nav {
+            display: none;
+          }
+        }
+        text-transform: uppercase;
+        margin-right: 10px;
+        margin-left: 10px;
+        a {
+          color: black;
+          font-size: 18px;
+          .nav-icon {
+            display: none;
+          }
+          @media screen and (max-width: $sml-screen) {
+            font-size: 12px;
+            .nav-icon {
+                display: block;
+                font-size: 16px;
+                margin: auto;
+            }
+          }
+        }
+        &.current-menu-parent {
+          a {
+            font-weight: bold;
+            text-decoration: underline;
+          }
+          ul {
+            li {
+            a {
+              font-weight: normal;
+              text-decoration: none;
+            }
+            &.current-menu-item,  {
+              a {
+                font-weight: bold;
+                text-decoration: underline;
+              }
+            }
+            }
+          }
+        }
+        &.current-menu-item,  {
+          a {
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+        
+        ul {
+          padding: 10px;
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          width: 200px;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          li {
+            list-style-type: none;
+          }
+        }
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-border {
+  border: 1px solid $primary-colour;
+}
+
+.bosch_banner {
+  border: 4px solid #808080;
+  padding: 10px;
+  display: flex;
+  .bosch_logo, .bosch_text {
+    display: inline-block;
+    text-align: center;
+    img {
+      height: 60px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.service-page-content {
+  padding-top: 30px;
+
+  table {
+    tr {
+      td {
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+    }
+  }
+
+  .contact_banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+    margin-top: 30px;
+    font-size: 22px;
+
+    .contact_number_link {
+        display: block;
+        font-weight: bold;
+        color: #404040;
+    }
+  }
+}
+
+.service-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  a {
+    color: #404040;
+    width: 100%;
+  }
+}

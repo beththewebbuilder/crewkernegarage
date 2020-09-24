@@ -1,0 +1,22 @@
+footer {
+  background-color: #808080;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+
+  .footer-right {
+    text-align: right;
+  }
+
+  a {
+    color: white;
+  }
+
+  @media screen and (max-width: $sml-screen) {
+    text-align: center;
+
+    .footer-right {
+      text-align: center;
+    }
+  }
+}
