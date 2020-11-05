@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Crewkerne Garage Custom Fields
  * Description: Create admin input for custom fields
- * Version: 1.0
+ * Version: 1.1
  * Author: Bethany Fowler
  * Author URI: http://bethanyfowler.me/
  */
@@ -79,6 +79,11 @@ function setting_webauthor_address() { ?>
   <input type="text" name="webauthor_address" id="webauthor_address" style="width: 50%;" value="<?php echo get_option( 'webauthor_address' ); ?>" />
 <?php }
 
+// Web Author Address
+function setting_google_verification_code() { ?>
+  <input type="text" name="google_verification" id="google_verification" style="width: 50%;" value="<?php echo get_option( 'google_verification' ); ?>" />
+<?php }
+
 function custom_settings_page_setup() {
   add_settings_section( 'section', 'All Settings', null, 'theme-options' );
   add_settings_field( 'banner', 'Banner Info', 'banner_text', 'theme-options', 'section' );
@@ -97,6 +102,8 @@ function custom_settings_page_setup() {
   add_settings_field( 'webauthor', 'Web Author', 'setting_webauthor', 'theme-options', 'section' );
   add_settings_field( 'webauthor_address', 'Web Author Address', 'setting_webauthor_address', 'theme-options', 'section' );
 
+  add_settings_field( 'google_verification', 'Google Site Verification', 'setting_google_verification_code', 'theme-options', 'section' );
+
   register_setting('section', 'banner');
   register_setting('section', 'intro');
   register_setting('section', 'services');
@@ -109,5 +116,6 @@ function custom_settings_page_setup() {
   register_setting('section', 'hours');
   register_setting('section', 'webauthor');
   register_setting('section', 'webauthor_address');
+  register_setting('section', 'google_verification');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );

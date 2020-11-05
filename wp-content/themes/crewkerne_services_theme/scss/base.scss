@@ -2,7 +2,7 @@
 Theme Name: Crewkerne Garage
 Author: Bethany Fowler
 Description: Template for Crewkerne Garage
-Version: 0.0.1
+Version: 1.0.1
 Tags: bootstrap
 */
 
@@ -146,6 +146,7 @@ body {
           width: 200px;
           border: 1px solid #ccc;
           border-radius: 2px;
+          z-index: 1;
           li {
             list-style-type: none;
           }
