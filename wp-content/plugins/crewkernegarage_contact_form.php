@@ -21,7 +21,7 @@ if(array_key_exists('contactSubmit', $_POST)) {
 
     global $wpdb;
 
-    $to = get_bloginfo('admin_email');
+    $to = get_option('email');
     $subject = "Crewkerne Garage Enquiry - " . $name;
     $headers = array('Content-Type: text/html; charset=UTF-8', 'From: ' . $name .' '.'<' . $email .'>' );
     $message = "<p>From: ".$name."</p><p>Email: ".$email."</p><p>Telephone: ".$phone."</p><p>Enquiry: ".$message."</p>";
@@ -60,6 +60,7 @@ if(array_key_exists('contactSubmit', $_POST)) {
 
   <div class="contact_form">
     <form id="bt_contact_form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php') ?>">
+      <?php echo get_option('email'); ?>
 
       <div class="form-group">
         <label>Name*</label>

@@ -23,6 +23,9 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="header-section left-section">
+            <div class="header_bosch_logo">
+              <img src="<?php echo get_bloginfo('template_directory'); ?>/images/bcs_logo.png"/>
+            </div>
             <ul>
               <li><?php echo get_option('address_line1');?></li>
               <li><?php echo get_option('address_line2');?></li>
@@ -38,6 +41,9 @@
               <li><a href="tel:<?php echo get_option('phone_number'); ?>"><?php echo get_option('phone_number'); ?></a></li>
               <li><a href="mailto:<?php echo get_option('email');?>"><?php echo get_option('email');?></a></li>
             </ul>
+            <div class="header_bosch_logo">
+              <img src="<?php echo get_bloginfo('template_directory'); ?>/images/bcs_logo.png"/>
+            </div>
           </div>
         </div>
       </div>

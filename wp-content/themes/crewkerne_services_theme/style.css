@@ -31,8 +31,14 @@ body {
   justify-content: flex-end;
   text-align: right;
 }
+.header-section.left-section .header_bosch_logo {
+  left: 10px;
+}
 .header-section.right-section {
   justify-content: flex-start;
+}
+.header-section.right-section .header_bosch_logo {
+  right: 10px;
 }
 @media screen and (max-width: 769px) {
   .header-section {
@@ -44,6 +50,14 @@ body {
 }
 .header-section ul li a {
   color: #212529;
+}
+.header-section .header_bosch_logo {
+  position: absolute;
+}
+.header-section .header_bosch_logo img {
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 769px) {

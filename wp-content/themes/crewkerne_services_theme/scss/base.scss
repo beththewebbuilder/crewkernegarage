@@ -24,9 +24,15 @@ body {
   &.left-section {
     justify-content: flex-end;
     text-align: right;
+    .header_bosch_logo {
+      left: 10px;
+    }
   }
   &.right-section {
     justify-content: flex-start;
+    .header_bosch_logo {
+      right: 10px;
+    }
   }
   @media screen and (max-width: $sml-screen) {
     display: none;
@@ -38,6 +44,14 @@ body {
       a {
         color: #212529;
       }
+    }
+  }
+  .header_bosch_logo {
+    position: absolute;
+    img {
+      height: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 }
@@ -123,7 +137,7 @@ body {
             text-decoration: underline;
           }
         }
-        
+
         ul {
           padding: 10px;
           display: none;
