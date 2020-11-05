@@ -60,7 +60,6 @@ if(array_key_exists('contactSubmit', $_POST)) {
 
   <div class="contact_form">
     <form id="bt_contact_form" action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php') ?>">
-      <?php echo get_option('email'); ?>
 
       <div class="form-group">
         <label>Name*</label>
