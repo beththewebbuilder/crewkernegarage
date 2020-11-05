@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Crewkerne Garage Contact Form
  * Description: Crewkerne Garage Contact Form
- * Version: 1.0
+ * Version: 2.0
  * Author: Bethany Fowler
  * Author URI: http://bethanyfowler.me/
  */
