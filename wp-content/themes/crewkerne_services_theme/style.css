@@ -2,10 +2,9 @@
 Theme Name: Crewkerne Garage
 Author: Bethany Fowler
 Description: Template for Crewkerne Garage
-Version: 0.1.1
+Version: 0.1.2
 Tags: bootstrap
 */
-
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -139,6 +138,7 @@ body {
   width: 200px;
   border: 1px solid #ccc;
   border-radius: 2px;
+  z-index: 100;
 }
 .navbar #navbarNav ul li ul li {
   list-style-type: none;

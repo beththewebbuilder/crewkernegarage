@@ -78,6 +78,24 @@
 
       </div>
 
+      <div class="row">
+
+        <div class="col-3">
+          <div class="contact_icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <div class="col-9">
+          <div class="contact-content">
+          <a href="<?php echo get_option('facebook') ?>">
+            <?php echo get_option('facebook') ?>
+          </a>
+        </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
