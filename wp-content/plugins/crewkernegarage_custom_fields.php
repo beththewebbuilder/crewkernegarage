@@ -79,9 +79,14 @@ function setting_webauthor_address() { ?>
   <input type="text" name="webauthor_address" id="webauthor_address" style="width: 50%;" value="<?php echo get_option( 'webauthor_address' ); ?>" />
 <?php }
 
-// Web Author Address
+// Google verification
 function setting_google_verification_code() { ?>
   <input type="text" name="google_verification" id="google_verification" style="width: 50%;" value="<?php echo get_option( 'google_verification' ); ?>" />
+<?php }
+
+// Google verification
+function setting_google_analytics_id() { ?>
+  <input type="text" name="google_analytics" id="google_analytics" style="width: 50%;" value="<?php echo get_option( 'google_analytics' ); ?>" />
 <?php }
 
 function custom_settings_page_setup() {
@@ -103,6 +108,7 @@ function custom_settings_page_setup() {
   add_settings_field( 'webauthor_address', 'Web Author Address', 'setting_webauthor_address', 'theme-options', 'section' );
 
   add_settings_field( 'google_verification', 'Google Site Verification', 'setting_google_verification_code', 'theme-options', 'section' );
+  add_settings_field( 'google_analytics', 'Google Analytics ID', 'setting_google_analytics_id', 'theme-options', 'section' );
 
   register_setting('section', 'banner');
   register_setting('section', 'intro');
@@ -117,5 +123,6 @@ function custom_settings_page_setup() {
   register_setting('section', 'webauthor');
   register_setting('section', 'webauthor_address');
   register_setting('section', 'google_verification');
+  register_setting('section', 'google_analytics');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );

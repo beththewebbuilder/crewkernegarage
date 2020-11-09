@@ -18,13 +18,13 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V20WWQJ4MK"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo get_option('google_analytics'); ?>"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-V20WWQJ4MK');
+      gtag('config', <?php echo get_option('google_analytics'); ?>);
     </script>
   </head>
 
