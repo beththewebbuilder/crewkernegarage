@@ -89,7 +89,7 @@
         <div class="col-9">
           <div class="contact-content">
           <a href="<?php echo get_option('facebook') ?>">
-            <?php echo get_option('facebook') ?>
+            Find us on Facebook
           </a>
         </div>
         </div>
