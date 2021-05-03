@@ -36,6 +36,9 @@ function intro() { ?>
 function services() { ?>
   <textarea name="services" id="services" style="width: 50%;" cols="10"><?php echo get_option('services'); ?></textarea>
 <?php }
+function InfoBanner() { ?>
+  <textarea name="infobanner" id="infobanner" style="width: 50%;" cols="10"><?php echo get_option('infobanner'); ?></textarea>
+<?php }
 
 // Telephone
 function setting_phone() { ?>
@@ -94,6 +97,7 @@ function custom_settings_page_setup() {
   add_settings_field( 'banner', 'Banner Info', 'banner_text', 'theme-options', 'section' );
   add_settings_field( 'intro', 'Page Intro', 'intro', 'theme-options', 'section' );
   add_settings_field( 'services', 'Services list', 'services', 'theme-options', 'section' );
+  add_settings_field( 'infobanner', 'Information Banner', 'infobanner', 'theme-options', 'section' );
   add_settings_field( 'phone_number', 'Phone Number', 'setting_phone', 'theme-options', 'section' );
   add_settings_field( 'address_line1', 'Address Line 1', 'setting_address_line1', 'theme-options', 'section' );
   add_settings_field( 'address_line2', 'Address Line 2', 'setting_address_line2', 'theme-options', 'section' );
@@ -113,6 +117,7 @@ function custom_settings_page_setup() {
   register_setting('section', 'banner');
   register_setting('section', 'intro');
   register_setting('section', 'services');
+  register_setting('section', 'infobanner');
   register_setting('section', 'phone_number');
   register_setting('section', 'address_line1');
   register_setting('section', 'address_line2');

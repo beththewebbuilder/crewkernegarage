@@ -5,8 +5,6 @@ $thisPostID = $post->ID;
 
     <h1 class="text-center">Looking after your <?php the_title(); ?></h1>
 
-<?php get_template_part('bosch_banner', get_post_format()); ?>
-
 <div class="service-page-content">
   <?php
   echo get_post_field("post_content", $page->ID);
