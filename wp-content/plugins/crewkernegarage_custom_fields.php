@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Crewkerne Garage Custom Fields
  * Description: Create admin input for custom fields
- * Version: 1.3
+ * Version: 1.4
  * Author: Bethany Fowler
  * Author URI: http://bethanyfowler.me/
  */
